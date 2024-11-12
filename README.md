@@ -67,28 +67,28 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## LANGKAH-LANGKAH INSTALASI :
 1. Pastikan Anda sudah menginstal perangkat lunak berikut:
-PHP (Versi yang sesuai dengan aplikasi Laravel, biasanya PHP 8.0 atau lebih tinggi) Composer (untuk manajemen dependensi Laravel) Database seperti MySQL, PostgreSQL, SQLite, dll (tergantung aplikasi Laravel yang diunduh)
+   PHP (Versi yang sesuai dengan aplikasi Laravel, biasanya PHP 8.0 atau lebih tinggi) Composer (untuk manajemen dependensi Laravel) Database seperti MySQL, PostgreSQL, SQLite, dll (tergantung aplikasi Laravel yang diunduh)
 
-2. Clone Repository dari GitHub
-git clone https://github.com/athoillah1st/sistem_informasi_geografis.git
+3. Clone Repository dari GitHub
+   git clone https://github.com/athoillah1st/sistem_informasi_geografis.git
 
-3. Masuk ke Direktori Aplikasi
+5. Masuk ke Direktori Aplikasi
 cd sistem_informasi_geografis
 
-4. Instal Dependensi dengan Composer
+6. Instal Dependensi dengan Composer
 composer install
 
-5. Instal Dependensi npm
+7. Instal Dependensi npm
 npm install
 npm run dev
 
-6. Menyalin File .env dan Konfigurasi
+8. Menyalin File .env dan Konfigurasi
 cp .env.example .env
 
-7. Mengatur Kunci Aplikasi (Application Key)
+9. Mengatur Kunci Aplikasi (Application Key)
 php artisan key:generate
 
-8. Konfigurasi Database dan Pengaturan Lainnya Buka file .env dan sesuaikan pengaturan database dan konfigurasi lainnya sesuai kebutuhan aplikasi. Misalnya, atur pengaturan database Anda:
+10. Konfigurasi Database dan Pengaturan Lainnya Buka file .env dan sesuaikan pengaturan database dan konfigurasi lainnya sesuai kebutuhan aplikasi. Misalnya, atur pengaturan database Anda:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -96,13 +96,13 @@ DB_DATABASE=nama_database
 DB_USERNAME=root
 DB_PASSWORD=
 
-9. Migrate Database
+11. Migrate Database
 php artisan migrate
 
-10. Menjalankan Server Development
+12. Menjalankan Server Development
 php artisan serve
 Secara default, aplikasi Laravel akan dijalankan di http://localhost:8000. Buka URL tersebut di browser untuk melihat aplikasi Anda.
 
-11. Jika ada error, coba jalankan perintah :
+13. Jika ada error, coba jalankan perintah :
 php artisan optimize
 
