@@ -12,9 +12,12 @@
                 <li class="nav-item"> <a href="" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
                         <p>Dashboard</p>
                     </a> </li>
-                <li class="nav-item"> <a href="./generate/theme.html" class="nav-link"> <i
+                <li class="nav-item"> <a href="" class="nav-link"> <i class="nav-icon bi bi-palette"></i>
+                        <p>Peta Dasar</p>
+                    </a> </li>
+                <li class="nav-item"> <a href="{{ route('markers.index') }}" class="nav-link"> <i
                             class="nav-icon bi bi-palette"></i>
-                        <p>Theme Generate</p>
+                        <p>Markers</p>
                     </a> </li>
                 <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
                         <p>

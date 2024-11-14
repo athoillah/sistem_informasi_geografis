@@ -8,6 +8,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha256-YMa+wAM6QkVyz999odX7lPRxkoYAan8suedu4k2Zur8=" crossorigin="anonymous"></script> <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
 <script src="{{ asset('adminlte/js/adminlte.js') }}"></script> <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha384-QF7IPk8RsI7GKNH4A8fAo5Sbd9X90MKEKh+QWy0VYFsMDo7gWNB3H4WYDTek9S8g" crossorigin=""></script>
 <script>
     const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
     const Default = {
