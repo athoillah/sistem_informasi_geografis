@@ -66,37 +66,37 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## LANGKAH-LANGKAH INSTALASI :
-1. Pastikan Anda sudah menginstal perangkat lunak berikut:
+## 1. Pastikan Anda sudah menginstal perangkat lunak berikut:
 
 PHP (Versi yang sesuai dengan aplikasi Laravel, biasanya PHP 8.0 atau lebih tinggi) Composer (untuk manajemen dependensi Laravel) Database seperti MySQL, PostgreSQL, SQLite, dll (tergantung aplikasi Laravel yang diunduh)
 
-2. Clone Repository dari GitHub
+## 2. Clone Repository dari GitHub
 
-git clone https://github.com/athoillah1st/sistem_informasi_geografis.git
+git clone https://github.com/athoillah/sistem_informasi_geografis.git
 
-3. Masuk ke Direktori Aplikasi
+## 3. Masuk ke Direktori Aplikasi
 
 cd sistem_informasi_geografis
 
-4. Instal Dependensi dengan Composer
+## 4. Instal Dependensi dengan Composer
 
 composer install
 
-5. Instal Dependensi npm
+## 5. Instal Dependensi npm
 
 npm install
 
 npm run dev
 
-6. Menyalin File .env dan Konfigurasi
+## 6. Menyalin File .env dan Konfigurasi
 
 cp .env.example .env
 
-7. Mengatur Kunci Aplikasi (Application Key)
+## 7. Mengatur Kunci Aplikasi (Application Key)
 
 php artisan key:generate
 
-8. Konfigurasi Database dan Pengaturan Lainnya Buka file .env dan sesuaikan pengaturan database dan konfigurasi lainnya sesuai kebutuhan aplikasi. Misalnya, atur pengaturan database Anda:
+## 8. Konfigurasi Database dan Pengaturan Lainnya Buka file .env dan sesuaikan pengaturan database dan konfigurasi lainnya sesuai kebutuhan aplikasi. Misalnya, atur pengaturan database Anda:
 
 DB_CONNECTION=mysql
 
@@ -110,17 +110,17 @@ DB_USERNAME=root
 
 DB_PASSWORD=
 
-9. Migrate Database
+## 9. Migrate Database
 
 php artisan migrate
 
-10. Menjalankan Server Development
+## 10. Menjalankan Server Development
 
 php artisan serve
 
 Secara default, aplikasi Laravel akan dijalankan di http://localhost:8000. Buka URL tersebut di browser untuk melihat aplikasi Anda.
 
-11. Jika ada error, coba jalankan perintah :
+## 11. Jika ada error, coba jalankan perintah :
 
 php artisan optimize
 
