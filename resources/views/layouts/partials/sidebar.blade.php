@@ -9,57 +9,34 @@
         <nav class="mt-2"> <!--begin::Sidebar Menu-->
             <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
 
-                <li class="nav-item"> <a href="" class="nav-link"> <i class="nav-icon bi bi-circle"></i>
+                <li class="nav-item"> <a href="" class="nav-link"> <i class="nav-icon bi-house-door"></i>
                         <p>Dashboard</p>
                     </a> </li>
-                <li class="nav-item"> <a href="" class="nav-link"> <i class="nav-icon bi bi-palette"></i>
+                <li class="nav-item"> <a href="{{ route('map') }}" class="nav-link"> <i class="nav-icon bi bi-map"></i>
                         <p>Peta Dasar</p>
                     </a> </li>
                 <li class="nav-item"> <a href="{{ route('markers.index') }}" class="nav-link"> <i
-                            class="nav-icon bi bi-palette"></i>
+                            class="nav-icon bi bi-geo-alt"></i>
                         <p>Markers</p>
                     </a> </li>
-                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-box-seam-fill"></i>
-                        <p>
-                            Widgets
-                            <i class="nav-arrow bi bi-chevron-right"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item"> <a href="./widgets/small-box.html" class="nav-link"> <i
-                                    class="nav-icon bi bi-circle"></i>
-                                <p>Small Box</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./widgets/info-box.html" class="nav-link"> <i
-                                    class="nav-icon bi bi-circle"></i>
-                                <p>info Box</p>
-                            </a> </li>
-                        <li class="nav-item"> <a href="./widgets/cards.html" class="nav-link"> <i
-                                    class="nav-icon bi bi-circle"></i>
-                                <p>Cards</p>
-                            </a> </li>
-                    </ul>
-                </li>
+                <li class="nav-item"> <a href="{{ route('routing') }}" class="nav-link"> <i
+                            class="nav-icon bi bi-signpost"></i>
+                        <p>Rute</p>
+                    </a> </li>
+                <br><br>
 
-                <li class="nav-header">EXAMPLES</li>
-                <li class="nav-item"> <a href="#" class="nav-link"> <i
-                            class="nav-icon bi bi-box-arrow-in-right"></i>
-                        <p>
-                            Auth
-                            <i class="nav-arrow bi bi-chevron-right"></i>
-                        </p>
+                <li class="nav-item">
+                    <a href="{{ route('logout') }}" class="nav-link"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="nav-icon bi bi-box-arrow-right"></i>
+                        <p>Sign Out</p>
                     </a>
 
+                    <!-- Form Logout -->
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 </li>
-                <li class="nav-header">DOCUMENTATIONS</li>
-                <li class="nav-item"> <a href="./docs/introduction.html" class="nav-link"> <i
-                            class="nav-icon bi bi-download"></i>
-                        <p>Installation</p>
-                    </a> </li>
-                <li class="nav-item"> <a href="./docs/layout.html" class="nav-link"> <i
-                            class="nav-icon bi bi-grip-horizontal"></i>
-                        <p>Layout</p>
-                    </a> </li>
             </ul> <!--end::Sidebar Menu-->
         </nav>
     </div> <!--end::Sidebar Wrapper-->
